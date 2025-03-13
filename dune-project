@@ -5,22 +5,22 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github ivnhk/calculator))
 
-(authors "Author Name <author@example.com>")
+(authors "Ivan Hrekov <iandrc9@gmail.com>")
 
-(maintainers "Maintainer Name <maintainer@example.com>")
+(maintainers "Ivan Hrekov <iandrc9@gmail.com>")
 
-(license LICENSE)
+(license MIT)
 
-(documentation https://url/to/documentation)
+(documentation https://github.com/ivnhk/calculator)
 
 (package
  (name calculator)
- (synopsis "A short synopsis")
- (description "A longer description")
- (depends ocaml)
+ (synopsis "A simple calculator from CS3110")
+ (description "A simple calculator from CS3110 implemented using OCaml and Menhir")
+ (depends ocaml menhir)
  (tags
-  ("add topics" "to describe" your project)))
+  ("calculator" "interpreter" "parser")))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html
