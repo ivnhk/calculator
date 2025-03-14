@@ -27,3 +27,9 @@ if e1 then e2 else e3 --> if e1' then e2 else e3
 
 if true then e2 else e3 --> e2
 if false then e2 else e3 --> e3
+
+let x = e1 in e2 --> let x = e1' in e2
+    if e1 --> e1'
+
+let x = v1 in e2 --> e2 with v1 substituted for x
+let x = v1 in e2 --> e2{v1/x}
