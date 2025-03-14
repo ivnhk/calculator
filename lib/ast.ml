@@ -1,5 +1,5 @@
 type bop =
-    | Plus
+    | Add
     | Mult
     | Leq
 
