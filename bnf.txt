@@ -9,3 +9,15 @@ x ::= <identifiers>
 i ::= <integers>
 
 b ::= true | false
+
+v ::= i | b
+v -/->
+
+e1 bop e2 --> e1' bop e2
+    if e1 --> e1'
+
+v1 bop e2 --> v1 bop e2'
+  if e2 --> e2'
+
+v1 bop v2 --> v
+  if v is the result of primitive operation v1 bop v2
