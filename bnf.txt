@@ -20,4 +20,10 @@ v1 bop e2 --> v1 bop e2'
   if e2 --> e2'
 
 v1 bop v2 --> v
-  if v is the result of primitive operation v1 bop v2
+    if v is the result of primitive operation v1 bop v2
+
+if e1 then e2 else e3 --> if e1' then e2 else e3
+    if e1 --> e1'
+
+if true then e2 else e3 --> e2
+if false then e2 else e3 --> e3
