@@ -38,4 +38,24 @@ x -/->
 e -->* e1
 e -->* e''
     if e --> e' and e' -->* e''
-  
+
+i ==> i
+b ==> b
+
+e1 bop e2 ==> v
+    if e1 ==> v1
+    and e2 ==> v2
+    and v is the result of primitive operation v1 bop v2
+
+if e1 then e2 else e3 ==> v2
+    if e1 ==> true
+    and e2 ==> v2
+
+if e1 then e2 else e2 ==> v3
+    if e1 ==> false
+    and e3 ==> v3
+
+let x = e1 in e2 ==> v2
+  if e1 ==> v1
+  and e2{v1/x} ==> v2
+x =/=>
