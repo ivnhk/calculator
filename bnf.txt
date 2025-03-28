@@ -33,3 +33,9 @@ let x = e1 in e2 --> let x = e1' in e2
 
 let x = v1 in e2 --> e2 with v1 substituted for x
 let x = v1 in e2 --> e2{v1/x}
+x -/->
+
+e -->* e1
+e -->* e''
+    if e --> e' and e' -->* e''
+  
